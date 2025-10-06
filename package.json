@@ -1,0 +1,11 @@
+{
+  "name": "anki-ai-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'Serverless functions ready'"
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
+  }
+}
