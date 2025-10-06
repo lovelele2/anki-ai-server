@@ -1,4 +1,22 @@
- // api/ai.js - 完整的AI记忆服务器
+// 在api/ai.js开头添加简单的测试代码
+export default async function handler(req, res) {
+  // 先返回简单响应测试
+  if (req.method === 'GET') {
+    return res.json({ 
+      status: 'ok', 
+      message: '服务器运行正常',
+      timestamp: new Date().toISOString()
+    });
+  }
+  
+  // 如果是POST请求，返回测试数据
+  return res.json({
+    success: true,
+    word: 'test',
+    mnemonic: '✅ 测试记忆联想',
+    service: 'test-mode'
+  });
+} // api/ai.js - 完整的AI记忆服务器
 import OpenAI from 'openai';
 
 // 初始化OpenAI客户端
